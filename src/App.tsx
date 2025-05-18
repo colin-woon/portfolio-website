@@ -1,12 +1,18 @@
-import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
-// import { logo, background } from './assets';
-import { ProjectCard, HackathonCard, MenuDock } from './components'
+import { ProjectCard, HackathonCard, MenuDock, SquaresBackground } from './components'
 import { reactLogo, viteLogo, bashLogo, cLogo, cppLogo, nextjsLogo, nodejsLogo, pythonLogo, tailwindLogo, typescriptLogo, logo42, apuLogo, kewdooLogo, newswavLogo, umhackWin, vhackWin, godamlahWin } from './assets'
 
 function App() {
   return (
+    <>
+    <div className="fixed inset-0 z-[-1]">
+        <SquaresBackground
+          speed={0.2}
+          squareSize={80}
+          direction='diagonal' // up, down, left, right, diagonal
+          borderColor='#6c1499'
+          hoverFillColor='#6c1499'
+        />
+    </div>
     <div className="ml-6 mr-6 sm:max-w-6xl flex flex-col gap-12 pb-20">
       <div className='mt-12 sm:ml-0 sm:mr-0 sm:mt-20'>
         <h1 className='font-bold'>Hi, I'm Colin 👋</h1>
@@ -119,6 +125,7 @@ and handle features like pipes, redirections and signals (C, Unix Shell APIs, Pa
         <MenuDock />
       </div>
     </div>
+    </>
   )
 }
 
