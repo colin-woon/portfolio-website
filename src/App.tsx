@@ -2,7 +2,7 @@ import { useState } from 'react'
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 // import { logo, background } from './assets';
-import { Card } from './components'
+import { ProjectCard } from './components'
 import { reactLogo, viteLogo, bashLogo, cLogo, cppLogo, nextjsLogo, nodejsLogo, pythonLogo, tailwindLogo, typescriptLogo, logo42, apuLogo, kewdooLogo, newswavLogo } from './assets'
 
 function App() {
@@ -20,9 +20,9 @@ function App() {
 
       <div>
         <p className="section-title" >Work Experience</p>
-          <div className="grid grid-cols-[1fr_10fr] grid-rows-2">
-            <div className="p-2 w-15 h-15 sm:w-18 sm:h-18"><img src={newswavLogo}/></div>
-            <div className="p-2 sm:flex sm:flex-row sm:gap-2 sm:justify-between">
+          <div className="grid grid-cols-[0.5fr_10.5fr] grid-rows-2">
+            <div className="p-2 w-15 h-15 place-content-center sm:w-18 sm:h-18"><img src={newswavLogo}/></div>
+            <div className="p-2 sm:flex sm:flex-row sm:justify-between">
               <div>
               <p className='font-bold'>
                 Newswav Sdn Bhd - Tech Intern
@@ -34,7 +34,7 @@ function App() {
               </p>
             </div>
             <div className="p-2 sm:w-18 sm:h-18"><img src={kewdooLogo}/></div>
-            <div className="p-2 sm:flex sm:flex-row sm:gap-2 sm:justify-between">
+            <div className="p-2 sm:flex sm:flex-row sm:justify-between">
               <div>
               <p className='font-bold'>
                 Kewdoo Sdn Bhd - IT Development and Support Intern
@@ -50,16 +50,31 @@ function App() {
 
       <div>
         <p className="section-title" >Education</p>
-          <div className="grid grid-cols-[1fr_10fr_2fr] grid-rows-3 gap-2">
-            <div className="border p-2">Item 1</div>
-            <div className="border p-2">Item 2</div>
-            <div className="border p-2">Item 3</div>
-            <div className="border p-2">Item 4</div>
-            <div className="border p-2">Item 5</div>
-            <div className="border p-2">Item 6</div>
-            <div className="border p-2">Item 7</div>
-            <div className="border p-2">Item 8</div>
-            <div className="border p-2">Item 9</div>
+          <div className="grid grid-cols-[0.5fr_10.5fr] grid-rows-2">
+            <div className="p-2 w-15 h-15 sm:w-18 sm:h-18"><img src={logo42}/></div>
+            <div className="p-2 sm:flex sm:flex-row sm:gap-2 sm:justify-between">
+              <div>
+              <p className='font-bold'>
+                42 Kuala Lumpur
+              </p>
+              <p>Competency in Computer Science - Lvl 4 out of 9</p>
+              </div>
+              <p className='text-right'>
+              June 2024 – Present
+              </p>
+            </div>
+            <div className="p-2 sm:w-18 sm:h-18"><img src={apuLogo}/></div>
+            <div className="p-2 sm:flex sm:flex-row sm:gap-2 sm:justify-between">
+              <div>
+              <p className='font-bold'>
+                Asia Pacific University of Technology & Innovation
+              </p>
+              <p>Diploma in Information Technology with Specialism in Data Analytics</p>
+              </div>
+              <p className='text-right'>
+              May 2020 – Jul 2022
+              </p>
+            </div>
           </div>
       </div>
 
@@ -67,23 +82,28 @@ function App() {
         <p className="section-title" >Skills</p>
         <div className='flex flex-auto justify-center gap-2'>
         {[bashLogo, cLogo, cppLogo, nextjsLogo, nodejsLogo, pythonLogo, tailwindLogo, typescriptLogo].map((logo, idx) => (
-          <img key={idx} src={logo} alt="Skill logo" className="h-8 w-8" />
+          <img key={idx} src={logo} alt="Skill logo" className="h-8 w-8 sm:w-12 sm:h-12" />
         ))}
         </div>
       </div>
 
       <div>
         <p className="section-title" >Projects</p>
-        <div className='flex flex-col sm:flex-row sm:flex-wrap gap-4'>
-        <Card title='Minishell' description='lorem ipsum dolor' link='https://github.com/colin-woon/4.1_minishell'/>
-        <Card title='Minishell' description='lorem ipsum dolor' link='https://github.com/colin-woon/4.1_minishell'/>
-        <Card title='Minishell' description='lorem ipsum dolor' link='https://github.com/colin-woon/4.1_minishell'/>
+        <div className='flex flex-col sm:grid sm:grid-cols-[1fr_1fr_1fr] sm:grid-rows-1 gap-4'>
+        <ProjectCard title='Minishell' description='A UNIX command-line interpreter that can parse and execute basic commands, manage environment variables, 
+and handle features like pipes, redirections and signals (C, Unix Shell APIs, Parsing, Process Management) ' link='https://github.com/colin-woon/4.1_minishell'/>
+        <ProjectCard title='Philosophers' description='Multithreading solution to dining philosophers problem (C, Mutexes, Concurrency)' link='https://github.com/colin-woon/4.0_philosophers'/>
+        <ProjectCard title='Libft' description='recreate a library containing a wide range of standard C library functions, including string manipulation, memory 
+ management, and list operations (C, Standard Library Functions, Memory Management, Makefile)' link='https://github.com/colin-woon/1.0_libft'/>
         </div>
       </div>
 
       <div>
         <p className="section-title" >Hackathons</p>
-      </div>  
+        <div className='flex flex-col sm:flex-row sm:flex-wrap sm:flex-auto gap-4'>
+
+        </div>
+      </div>
     </div>
   )
 }
