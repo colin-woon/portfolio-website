@@ -12,5 +12,8 @@ import logo42 from './42_logo.png';
 import apuLogo from './apu_logo.png';
 import kewdooLogo from './kewdoo_logo.png';
 import newswavLogo from './newswav_logo.png';
+import umhackWin from './umhack_win.jpg';
+import vhackWin from './vhack_win.jpg';
+import godamlahWin from './godamlah_win.jpg';
 
-export { reactLogo, viteLogo, bashLogo, cLogo, cppLogo, nextjsLogo, nodejsLogo, pythonLogo, tailwindLogo, typescriptLogo, logo42, apuLogo, kewdooLogo, newswavLogo};
+export { reactLogo, viteLogo, bashLogo, cLogo, cppLogo, nextjsLogo, nodejsLogo, pythonLogo, tailwindLogo, typescriptLogo, logo42, apuLogo, kewdooLogo, newswavLogo, umhackWin, vhackWin, godamlahWin};

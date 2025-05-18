@@ -2,12 +2,12 @@ import { useState } from 'react'
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 // import { logo, background } from './assets';
-import { ProjectCard } from './components'
-import { reactLogo, viteLogo, bashLogo, cLogo, cppLogo, nextjsLogo, nodejsLogo, pythonLogo, tailwindLogo, typescriptLogo, logo42, apuLogo, kewdooLogo, newswavLogo } from './assets'
+import { ProjectCard, HackathonCard, MenuDock } from './components'
+import { reactLogo, viteLogo, bashLogo, cLogo, cppLogo, nextjsLogo, nodejsLogo, pythonLogo, tailwindLogo, typescriptLogo, logo42, apuLogo, kewdooLogo, newswavLogo, umhackWin, vhackWin, godamlahWin } from './assets'
 
 function App() {
   return (
-    <div className="ml-6 mr-6 sm:max-w-6xl flex flex-col gap-12">
+    <div className="ml-6 mr-6 sm:max-w-6xl flex flex-col gap-12 pb-20">
       <div className='mt-12 sm:ml-0 sm:mr-0 sm:mt-20'>
         <h1 className='font-bold'>Hi, I'm Colin 👋</h1>
         <h2 className='text-xl sm:text-2xl text-justify'>A Self-Taught Full Stack Developer Exploring DevOps & Cloud—Shaped by 42KL,</h2>
@@ -81,7 +81,7 @@ function App() {
       <div>
         <p className="section-title" >Skills</p>
         <div className='flex flex-auto justify-center gap-2'>
-        {[bashLogo, cLogo, cppLogo, nextjsLogo, nodejsLogo, pythonLogo, tailwindLogo, typescriptLogo].map((logo, idx) => (
+        {[bashLogo, cLogo, cppLogo, nextjsLogo, nodejsLogo, pythonLogo, typescriptLogo].map((logo, idx) => (
           <img key={idx} src={logo} alt="Skill logo" className="h-8 w-8 sm:w-12 sm:h-12" />
         ))}
         </div>
@@ -100,9 +100,23 @@ and handle features like pipes, redirections and signals (C, Unix Shell APIs, Pa
 
       <div>
         <p className="section-title" >Hackathons</p>
-        <div className='flex flex-col sm:flex-row sm:flex-wrap sm:flex-auto gap-4'>
-
+        <div className='flex flex-col sm:flex-row gap-4'>
+          <HackathonCard backgroundImageUrl={umhackWin} header="UM Hackathon 2025" description='LibQT - 1st Runner Up'/>
+          <HackathonCard backgroundImageUrl={vhackWin} header="Varsity Hackathon USM 2025" description='DermaDAO - 5th Place'/>
+          <HackathonCard backgroundImageUrl={godamlahWin} header="GodamLah! by Datasonic 2025" description='Databaes - 1st Runner-Up'/>
         </div>
+      </div>
+
+      <div>
+        <p className="italic text-center" >Built with React + Vite + Tailwind</p>
+        <div className='flex flex-auto justify-center gap-2'>
+          <img src={reactLogo} alt="React logo" className="h-8 w-8 sm:w-12 sm:h-12" />
+          <img src={viteLogo} alt="Vite logo" className="h-8 w-8 sm:w-12 sm:h-12" />
+          <img src={tailwindLogo} alt="Tailwind CSS logo" className="h-8 w-8 sm:w-12 sm:h-12" />
+        </div>
+      </div>
+      <div className="fixed bottom-0 left-6 right-6 flex flex-auto justify-center pb-4 z-50">
+        <MenuDock />
       </div>
     </div>
   )
