@@ -109,7 +109,7 @@ and handle features like pipes, redirections and signals (C, Unix Shell APIs, Pa
 
       <div>
         <p className="italic text-center" >Built with React + Vite + Tailwind</p>
-        <div className='flex flex-auto justify-center gap-2'>
+        <div className='flex flex-auto mb-2 justify-center gap-2'>
           <img src={reactLogo} alt="React logo" className="h-8 w-8 sm:w-12 sm:h-12" />
           <img src={viteLogo} alt="Vite logo" className="h-8 w-8 sm:w-12 sm:h-12" />
           <img src={tailwindLogo} alt="Tailwind CSS logo" className="h-8 w-8 sm:w-12 sm:h-12" />
