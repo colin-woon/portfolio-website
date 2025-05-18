@@ -9,8 +9,8 @@ function App() {
           speed={0.2}
           squareSize={80}
           direction='diagonal' // up, down, left, right, diagonal
-          borderColor='#6c1499'
-          hoverFillColor='#6c1499'
+          borderColor='#540080'
+          hoverFillColor='#222'
         />
     </div>
     <div className="ml-6 mr-6 sm:max-w-6xl flex flex-col gap-12 pb-20">
