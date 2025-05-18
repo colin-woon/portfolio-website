@@ -70,3 +70,8 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.section-title {
+  @apply text-xl font-bold sm:text-2xl mb-2;
+}
+

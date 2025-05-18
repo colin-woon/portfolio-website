@@ -8,5 +8,9 @@ import nodejsLogo from './Node.js.svg';
 import pythonLogo from './Python.svg';
 import tailwindLogo from './Tailwind CSS.svg';
 import typescriptLogo from './TypeScript.svg';
+import logo42 from './42_logo.png';
+import apuLogo from './apu_logo.png';
+import kewdooLogo from './kewdoo_logo.png';
+import newswavLogo from './newswav_logo.png';
 
-export { reactLogo, viteLogo, bashLogo, cLogo, cppLogo, nextjsLogo, nodejsLogo, pythonLogo, tailwindLogo, typescriptLogo };
+export { reactLogo, viteLogo, bashLogo, cLogo, cppLogo, nextjsLogo, nodejsLogo, pythonLogo, tailwindLogo, typescriptLogo, logo42, apuLogo, kewdooLogo, newswavLogo};
