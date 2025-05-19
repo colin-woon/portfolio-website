@@ -24,7 +24,7 @@ export default function HackathonCard({
           backgroundImage: `url(${backgroundImageUrl})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
-          opacity: 0.6, // Only this layer is semi-transparent
+          opacity: 0.8, // Only this layer is semi-transparent
         }}
       />
         <div className="absolute w-full h-full top-0 left-0 transition duration-300 group-hover/card:bg-black opacity-60"></div>
