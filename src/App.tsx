@@ -21,7 +21,7 @@ function App() {
 
       <div>
         <p className="section-title" >About Me</p>
-        <p className='text-justify'>My journey into software development didn’t follow a traditional path. I began in a conventional academic setting in Malaysia but quickly realized the disconnect between lecture-based learning and real-world tech. That realization led me to 42 Kuala Lumpur—a peer-driven, hands-on coding school that reignited my passion and transformed how I learn. Since then, I’ve immersed myself in full stack development, challenged myself with new languages like Go, and discovered a growing interest in DevOps and Cloud technologies. For me, tech isn’t just a skillset—it’s a mindset of lifelong learning and problem-solving.</p>
+        <p className='text-justify'>I began in a conventional academic setting in Malaysia but quickly realized the disconnect between lecture-based learning and real-world tech. That realization led me to 42 Kuala Lumpur—a peer-driven, hands-on coding school that reignited my passion and transformed how I learn. Since then, I’ve immersed myself in full stack development, and discovered a growing interest in DevOps and Cloud technologies. For me, tech isn’t just a skillset—it’s a mindset of lifelong learning and problem-solving.</p>
       </div>
 
       <div>
