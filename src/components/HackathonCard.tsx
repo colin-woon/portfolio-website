@@ -4,12 +4,14 @@ type HackathonCardProps = {
   backgroundImageUrl: string;
   header: string;
   description: string;
+  opacity?: undefined | number;
 };
 
 export default function HackathonCard({
   backgroundImageUrl,
   header,
   description,
+  opacity = 0.9,
 }: HackathonCardProps)  {
   return (
     <div className="max-w w-full group/card">
@@ -24,7 +26,7 @@ export default function HackathonCard({
           backgroundImage: `url(${backgroundImageUrl})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
-          opacity: 0.8, // Only this layer is semi-transparent
+          opacity: opacity, // Only this layer is semi-transparent
         }}
       />
         <div className="absolute w-full h-full top-0 left-0 transition duration-300 group-hover/card:bg-black opacity-60"></div>

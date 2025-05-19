@@ -108,7 +108,7 @@ and handle features like pipes, redirections and signals (C, Unix Shell APIs, Pa
         <p className="section-title" >Hackathons</p>
         <div className='flex flex-col sm:flex-row gap-4'>
           <HackathonCard backgroundImageUrl={umhackWin} header="UM Hackathon 2025" description='LibQT - 1st Runner Up'/>
-          <HackathonCard backgroundImageUrl={vhackWin} header="Varsity Hackathon USM 2025" description='DermaDAO - 5th Place'/>
+          <HackathonCard backgroundImageUrl={vhackWin} header="Varsity Hackathon USM 2025" description='DermaDAO - 5th Place' opacity={0.7} />
           <HackathonCard backgroundImageUrl={godamlahWin} header="GodamLah! by Datasonic 2025" description='Databaes - 1st Runner-Up'/>
         </div>
       </div>
