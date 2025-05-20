@@ -1,4 +1,4 @@
-import { ProjectCard, HackathonCard, MenuDock, SquaresBackground } from './components'
+import { ProjectCard, HackathonCard, MenuDock, SquaresBackground, TypingAnimation } from './components'
 import { reactLogo, viteLogo, bashLogo, cLogo, cppLogo, nextjsLogo, nodejsLogo, pythonLogo, tailwindLogo, typescriptLogo, logo42, apuLogo, kewdooLogo, newswavLogo, umhackWin, vhackWin, godamlahWin } from './assets'
 
 function App() {
@@ -15,7 +15,8 @@ function App() {
     </div>
     <div className="ml-6 mr-6 sm:max-w-6xl flex flex-col gap-12 pb-20">
       <div className='mt-12 sm:ml-0 sm:mr-0 sm:mt-20'>
-        <h1 className='font-bold'>Hi, I'm Colin 👋</h1>
+        <TypingAnimation className='font-bold text-6xl'>Hi, I'm Colin 👋</TypingAnimation>
+        {/* <h1 className='font-bold'>Hi, I'm Colin 👋</h1> */}
         <h2 className='text-xl sm:text-2xl text-justify'>A Self-Taught Full Stack Developer Exploring DevOps & Cloud—Shaped by 42KL,</h2>
       </div>
 
