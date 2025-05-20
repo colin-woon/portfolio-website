@@ -15,9 +15,8 @@ function App() {
     </div>
     <div className="ml-6 mr-6 sm:max-w-6xl flex flex-col gap-12 pb-20">
       <div className='mt-12 sm:ml-0 sm:mr-0 sm:mt-20'>
-        <TypingAnimation className='font-bold text-6xl'>Hi, I'm Colin 👋</TypingAnimation>
-        {/* <h1 className='font-bold'>Hi, I'm Colin 👋</h1> */}
-        <h2 className='text-xl sm:text-2xl text-justify'>A Self-Taught Full Stack Developer Exploring DevOps & Cloud—Shaped by 42KL,</h2>
+        <TypingAnimation className='font-bold text-5xl sm:text-8xl mb-2' duration={80}>Hi, I'm Colin👋</TypingAnimation>
+        <TypingAnimation className='font-bold text-2xl sm:text-5xl mb-2' duration={50}>A Self-Taught Full Stack Developer Exploring DevOps & Cloud—Shaped by 42KL</TypingAnimation>
       </div>
 
       <div>
