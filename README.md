@@ -2,7 +2,7 @@
 
 This repository contains the source code for my personal portfolio, a dynamic and responsive single-page application built with React, TypeScript, and Vite. It is designed to showcase my skills, projects, and experience in a clean and modern interface.
 
-The live version is deployed and can be viewed [here](https://colin-woon.github.io/portfolio/) 🚀
+The live version is deployed and can be viewed [here](https://colin-woon.github.io/portfolio-website/) 🚀
 
 ## ⚡ Technical Features
 
