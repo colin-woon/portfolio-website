@@ -1,4 +1,4 @@
-import { ProjectCard, HackathonCard, MenuDock, SquaresBackground, TypingAnimation } from './components'
+import { ProjectCard, HackathonCard, MenuDock, SquaresBackground, TypingAnimation, WeatherWidget } from './components'
 import { reactLogo, viteLogo, bashLogo, cLogo, cppLogo, nextjsLogo, nodejsLogo, pythonLogo, tailwindLogo, typescriptLogo, logo42, apuLogo, kewdooLogo, newswavLogo, umhackWin, vhackWin, godamlahWin } from './assets'
 
 function App() {
@@ -13,8 +13,9 @@ function App() {
           hoverFillColor='#222'
         />
     </div>
-    <div className="ml-6 mr-6 sm:max-w-6xl flex flex-col gap-12 pb-20">
-      <div className='mt-12 sm:ml-0 sm:mr-0 sm:mt-20'>
+    <div className="ml-6 mr-6 sm:max-w-6xl flex flex-col gap-12 pb-20 font-mono">
+      <WeatherWidget />
+      <div className='mt-12 sm:ml-0 sm:mr-0'>
         <TypingAnimation className='font-bold text-5xl sm:text-8xl mb-2' duration={80}>Hi, I'm Colin👋</TypingAnimation>
         <TypingAnimation className='font-bold text-2xl sm:text-5xl mb-2' duration={50}>A Self-Taught Full Stack Developer Exploring DevOps & Cloud—Shaped by 42KL</TypingAnimation>
       </div>
@@ -120,6 +121,9 @@ and handle features like pipes, redirections and signals (C, Unix Shell APIs, Pa
           <img src={viteLogo} alt="Vite logo" className="h-8 w-8 sm:w-12 sm:h-12" />
           <img src={tailwindLogo} alt="Tailwind CSS logo" className="h-8 w-8 sm:w-12 sm:h-12" />
         </div>
+        <p className='italic text-center'>
+          Check out the website code <a href="https://github.com/colin-woon/portfolio-website">here!</a>
+        </p>
       </div>
       <div className="fixed bottom-0 left-6 right-6 flex flex-auto justify-center pb-4 z-50">
         <MenuDock />
