@@ -1,54 +1,49 @@
-# React + TypeScript + Vite
+# 👨‍💻 Colin's Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains the source code for my personal portfolio, a dynamic and responsive single-page application built with React, TypeScript, and Vite. It is designed to showcase my skills, projects, and experience in a clean and modern interface.
 
-Currently, two official plugins are available:
+The live version is deployed and can be viewed [here](https://colin-woon.github.io/portfolio/) 🚀
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ⚡ Technical Features
 
-## Expanding the ESLint configuration
+This portfolio is more than just a static site. It incorporates several interesting technical features:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 🌤️ 1. Dynamic Weather Widget
+- **Live Data Integration:** Fetches real-time weather forecast data from Malaysia's public data API (`data.gov.my`).
+- **Client-Side Caching:** Implements a caching mechanism using `localStorage` to reduce redundant API calls, respecting rate limits and improving performance. The cache is set to a 10-minute expiry.
+- **Dynamic UI:** The widget displays the current day's weather, including a descriptive emoji, the forecast summary, and temperature range.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### ✨ 2. Interactive & Animated UI
+- **Custom Components:** Built with a component-based architecture, featuring reusable and modular UI elements like project cards, a menu dock, and more.
+- **Animations:** Utilizes `framer-motion` for smooth page transitions and a custom-built typing animation for the hero section, creating an engaging user experience.
+- **Responsive Design:** The layout is fully responsive, ensuring a seamless experience across desktops, tablets, and mobile devices using Tailwind CSS.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 🔄 3. Automated CI/CD Pipeline
+- **GitHub Actions:** A CI/CD pipeline is configured using GitHub Actions to automate the build and deployment process.
+- **Continuous Deployment:** Every push to the `main` branch automatically triggers the pipeline, which builds the application and deploys it to GitHub Pages, ensuring the live portfolio is always up-to-date with the latest changes.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🛠️ Core Technologies
+- **Frontend:** React, TypeScript, Vite
+- **Styling:** Tailwind CSS
+- **Animations:** Framer Motion
+- **Deployment:** GitHub Pages
+- **CI/CD:** GitHub Actions
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## 🚀 Getting Started
+
+To run this project locally:
+
+1.  **Clone the repository:** 📥
+    ```bash
+    git clone https://github.com/colin-woon/portfolio.git
+    cd portfolio
+    ```
+
+2.  **Install dependencies:**
+    ```bash
+    pnpm install
+    ```
+
+3.  **Run the development server:**
+    ```bash
+    pnpm run dev
