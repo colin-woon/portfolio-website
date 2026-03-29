@@ -1,16 +1,25 @@
 import { ProjectCard, HackathonCard, MenuDock, SquaresBackground, TypingAnimation, WeatherWidget } from './components'
 import { reactLogo, viteLogo, bashLogo, cLogo, cppLogo, nextjsLogo, nodejsLogo, pythonLogo, tailwindLogo, typescriptLogo, logo42, apuLogo, kewdooLogo, newswavLogo, umhackWin, vhackWin, godamlahWin } from './assets'
+import { useState } from 'react'
 
 function App() {
+  const [theme, setTheme] = useState("luxury")
+
+  const isDark = theme === "luxury";
+
+  // #341C02 dark brown for dark mode, #CBD5E1 light gray for light mode
+  const gridColor = isDark ? '#341C02' : '#F6DCC0';
+  const hoverColor = isDark ? '#222' : '#F1F5F9';
+
   return (
-    <>
+    <html data-theme={theme}>
     <div className="fixed inset-0 z-[-1]">
         <SquaresBackground
           speed={0.2}
           squareSize={80}
           direction='diagonal' // up, down, left, right, diagonal
-          borderColor='#540080'
-          hoverFillColor='#222'
+          borderColor={gridColor}
+          hoverFillColor={hoverColor}
         />
     </div>
     <div className="ml-6 mr-6 sm:max-w-6xl flex flex-col gap-12 pb-20 font-mono">
@@ -126,10 +135,10 @@ and handle features like pipes, redirections and signals (C, Unix Shell APIs, Pa
         </p>
       </div>
       <div className="fixed bottom-0 left-6 right-6 flex flex-auto justify-center pb-4 z-50">
-        <MenuDock />
+        <MenuDock setTheme={setTheme}/>
       </div>
     </div>
-    </>
+    </html>
   )
 }
 
