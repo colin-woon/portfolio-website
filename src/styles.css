@@ -2,7 +2,9 @@
 @import "tailwindcss";
 @plugin "daisyui" {
    themes: caramellatte --default, luxury --prefersdark;
- }
+}
+
+@custom-variant dark (&:where([data-theme=luxury], [data-theme=luxury] *));
 
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -65,7 +67,7 @@ button:focus-visible {
 
 @theme inline {
   --animate-move: move 5s linear infinite;
- 
+
   @keyframes move {
     0% {
       transform: translateX(-200px);

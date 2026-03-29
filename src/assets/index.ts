@@ -15,5 +15,8 @@ import newswavLogo from './newswav_logo.png';
 import umhackWin from './umhack_win.jpg';
 import vhackWin from './vhack_win.jpg';
 import godamlahWin from './godamlah_win.jpg';
+import hacklabWin from './hacklab_win.jpg';
+import iotaWin from './iota_win.jpg';
+import ustWin from './ust_win.jpg';
 
-export { reactLogo, viteLogo, bashLogo, cLogo, cppLogo, nextjsLogo, nodejsLogo, pythonLogo, tailwindLogo, typescriptLogo, logo42, apuLogo, kewdooLogo, newswavLogo, umhackWin, vhackWin, godamlahWin};
+export { reactLogo, viteLogo, bashLogo, cLogo, cppLogo, nextjsLogo, nodejsLogo, pythonLogo, tailwindLogo, typescriptLogo, logo42, apuLogo, kewdooLogo, newswavLogo, umhackWin, vhackWin, godamlahWin, iotaWin, ustWin, hacklabWin};
