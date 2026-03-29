@@ -107,7 +107,7 @@ function App() {
         <p className="section-title" >Projects</p>
         <div className='flex flex-col sm:grid sm:grid-cols-[1fr_1fr] sm:grid-rows-2 gap-4'>
         <ProjectCard title='42 Overflow - Capstone Project' description='A Q&A platform for 42 project build with polyglot microservices (Quarkus for authentication, Go for real-time chat, Python FastAPI for forums, mTLS, NGINX, PostgreSQL)' link='https://github.com/colin-woon/7.0_ft_transcendence'/>
-        <ProjectCard title='Inception' description='setup a small and secure infrastructure of services according to a LEMP stack (Linux, Nginx, MariaDB or MySQL, PHP Wordpress) running in dedicated containers' link='https://github.com/colin-woon/6.1_inception'/>
+        <ProjectCard title='Inception' description='Setup a small and secure infrastructure of services according to a LEMP stack (Linux, Nginx, MariaDB or MySQL, PHP Wordpress) running in dedicated containers' link='https://github.com/colin-woon/6.1_inception'/>
         <ProjectCard title='Philosophers' description='Multithreading solution to dining philosophers problem (C, Mutexes, Concurrency)' link='https://github.com/colin-woon/4.0_philosophers'/>
         <ProjectCard title='LibQT' description='A YAML style config-driven quant trading backtest framework in Python' link='https://github.com/colin-woon/umhackathon_2025'/>
         </div>
@@ -121,7 +121,7 @@ function App() {
           <HackathonCard backgroundImageUrl={umhackWin} header="UM Hackathon 2025" description='LibQT - 1st Runner Up'/>
           <HackathonCard backgroundImageUrl={vhackWin} header="Varsity Hackathon USM 2025" description='DermaDAO - 5th Place' />
           <HackathonCard backgroundImageUrl={godamlahWin} header="GodamLah! by Datasonic 2025" description='Databaes - 1st Runner-Up'/>
-          <HackathonCard backgroundImageUrl={hacklabWin} header="HackLab 2025 by Ambank x 42KL" description='Amdash - Top 5 Finalist'/>
+          <HackathonCard backgroundImageUrl={hacklabWin} header="HackLab 2025 by Ambank x 42KL" description='AmDash - Top 5 Finalist'/>
         </div>
       </div>
 

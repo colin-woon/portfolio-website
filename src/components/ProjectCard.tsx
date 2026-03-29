@@ -13,7 +13,7 @@ function projectCard({ title, description, link }: CardProps) {
     <div className="card card-border bg-base-100">
         <div className="card-body">
         <h2 className="card-title">{title}</h2>
-        <p className="text-justify">{description}</p>
+        <p className="text-left sm:text-justify">{description}</p>
         <div className="card-actions justify-end">
             <button className="btn btn-primary" onClick={handleClick}>View</button>
         </div>
